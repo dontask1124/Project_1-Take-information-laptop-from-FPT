@@ -28,7 +28,7 @@ def loc_CPU(CPU):
     ts_CPU =CPU.split(",")
     hang_CPU = ts_CPU[0][4:]
     
-    if "AMD" in hang_CPU:
+    if ("AMD","Apple","Celeron") in hang_CPU:
         dong_CPU = ts_CPU[1][1:]
     else:
         dong_CPU = ts_CPU[1][5:]
